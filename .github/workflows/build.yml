@@ -6,5 +6,4 @@ jobs:
     with:
       build_matrix_path: "ibkbd-mini/zmk/build.yaml"
       config_path: "ibkbd-mini/zmk/config"
-    env:
       ZEPHYR_BASE: ${{ github.workspace }}/ibkbd-mini/zmk/zephyr
