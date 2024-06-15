@@ -1,7 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 
 / {
@@ -30,16 +29,7 @@
 &kp Q       &kp W       &kp E       &kp R           &kp T    &kp Y      &kp U       &kp I          &kp O         &kp P
 &hm LGUI A  &hm LALT S  &hm LCTRL D &hm LSHFT F     &kp G    &kp H      &hm RSHFT J &hm RCTRL K    &hm LALT L    &hm RGUI SEMI
 &mt LSHFT Z &mt LCTRL X &mt LALT C  &kp V           &kp B    &kp N      &kp M       &mt RALT COMMA &mt RCTRL DOT &mt RSHFT SLASH
-                                   &kp ENTER &kp SPACE &lt 1 TAB &kp ESC &lt 2 BSPC &kp DEL
-            >;
-        };
-
-        nav {
-            bindings = <
-              &kp TAB &kp K_BACK &kp K_FORWARD &kp K_REFRESH &none &mwh SCROLL_LEFT &mwh SCROLL_DOWN &mwh SCROLL_UP &mwh SCROLL_RIGHT &none
-              &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &none &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &none
-              &kp HOME &kp PG_DN &kp PG_UP &kp END &none &kp LEFT &kp DOWN &kp UP &kp RIGHT &none
-              &none &none &trans &mkp RCLK &mkp LCLK &mkp MCLK
+                                   &kp ENTER &kp SPACE &lt 1 TAB &kp ESC &lt 1 BSPC &kp DEL
             >;
         };
 
