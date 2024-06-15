@@ -10,4 +10,4 @@ manifest:
       revision: main
       import: app/west.yml
   self:
-    path: ibkbd-mini/zmk/config
+    path: config
