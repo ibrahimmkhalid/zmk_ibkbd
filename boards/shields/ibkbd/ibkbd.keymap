@@ -36,7 +36,7 @@
 &kp Q       &kp W       &kp E       &kp R           &kp T    &kp Y      &kp U       &kp I          &kp O         &kp P
 &hm LGUI A  &hm LALT S  &hm LCTRL D &hm LSHFT F     &kp G    &kp H      &hm RSHFT J &hm RCTRL K    &hm LALT L    &hm RGUI SEMI
 &mt LSHFT Z &mt LCTRL X &mt LALT C  &kp V           &kp B    &kp N      &kp M       &mt RALT COMMA &mt RCTRL DOT &mt RSHFT SLASH
-                                   &kp ENTER &kp SPACE &lt 1 TAB &lt 3 ESC &lt 2 BSPC &kp DEL
+                                   &kp ENTER &lt 4 SPACE &lt 1 TAB &lt 3 ESC &lt 2 BSPC &kp DEL
             >;
         };
 
@@ -72,7 +72,7 @@
 &bootloader &kp INS &kp SLCK &kp PAUSE_BREAK &none &none &kp C_VOLUME_DOWN &kp C_MUTE &kp C_VOLUME_UP &none
 &sys_reset &kp K_APP &kp CAPS &kp PSCRN &none &none &kp C_PREV &kp C_PP &kp C_NEXT &none
 &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR &none &none &none &none &none
-&none &none &trans &none &kp ESC &none
+&none &trans &none &none &kp ESC &none
             >;
         };
     };
