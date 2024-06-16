@@ -4,6 +4,12 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 
+#undef ZMK_MOUSE_DEFAULT_MOVE_VAL
+#define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200
+
+#undef ZMK_MOUSE_DEFAULT_SCRL_VAL
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 30
+
 / {
     chosen {
         zmk,matrix-transform = &default_transform;
