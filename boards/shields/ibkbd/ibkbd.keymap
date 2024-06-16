@@ -10,6 +10,21 @@
 #undef ZMK_MOUSE_DEFAULT_SCRL_VAL
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 25
 
+#ifdef VOLD
+#undef VOLD
+#endif
+#define VOLD C_VOLUME_DOWN
+
+#ifdef VOLU
+#undef VOLU
+#endif
+#define VOLU C_VOLUME_UP
+
+#ifdef PAUSE
+#undef PAUSE
+#endif
+#define PAUSE PAUSE_BREAK
+
 / {
     chosen {
         zmk,matrix-transform = &default_transform;
@@ -38,46 +53,46 @@
 
         base {
             bindings = <
-&kp Q       &kp W       &kp E       &kp R           &kp T    &kp Y      &kp U       &kp I          &kp O         &kp P
-&hm LGUI A  &hm LALT S  &hm LCTRL D &hm LSHFT F     &kp G    &kp H      &hm RSHFT J &hm RCTRL K    &hm LALT L    &hm RGUI SEMI
-&mt LSHFT Z &mt LCTRL X &mt LALT C  &kp V           &kp B    &kp N      &kp M       &mt RALT COMMA &mt RCTRL DOT &mt RSHFT SLASH
-&kp ENTER &lt 4 SPACE &lt 1 TAB &lt 3 ESC &lt 2 BSPC &kp DEL
+&kp Q           &kp W           &kp E           &kp R           &kp T           &kp Y           &kp U           &kp I           &kp O           &kp P
+&hm LGUI A      &hm LALT S      &hm LCTRL D     &hm LSHFT F     &kp G           &kp H           &hm RSHFT J     &hm RCTRL K     &hm LALT L      &hm RGUI SEMI
+&mt LSHFT Z     &mt LCTRL X     &mt LALT C      &kp V           &kp B           &kp N           &kp M           &mt RALT COMMA  &mt RCTRL DOT   &mt RSHFT SLASH
+&kp ENTER       &lt 4 SPACE     &lt 1 TAB       &lt 3 ESC       &lt 2 BSPC      &kp DEL
             >;
         };
 
         nav {
             bindings = <
-&kp TAB &kp K_BACK &kp K_FORWARD &kp K_REFRESH &none &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT &none
-&kp LGUI &kp LALT &kp LCTRL &kp LSHFT &none &kp LEFT &kp DOWN &kp UP &kp RIGHT &none
-&kp HOME &kp PG_DN &kp PG_UP &kp END &none &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &none
-&none &none &trans &mkp RCLK &mkp LCLK &mkp MCLK
+&kp TAB         &kp K_BACK      &kp K_FORWARD   &kp K_REFRESH   &none           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP    &msc SCRL_RIGHT &none
+&kp LGUI        &kp LALT        &kp LCTRL       &kp LSHFT       &none           &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &none
+&kp HOME        &kp PG_DN       &kp PG_UP       &kp END         &none           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT &none
+&none           &none           &trans          &mkp RCLK       &mkp LCLK       &mkp MCLK
             >;
         };
 
         nums {
             bindings = <
-&kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-&kp LGUI &kp LALT &kp LCTRL &kp LSHFT &kp F11 &kp F12 &kp RSHFT &kp RCTRL &kp LALT &kp RGUI
-&kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10
-&kp ENTER &kp SPACE &kp BSPC &none &trans &none
+&kp N1          &kp N2          &kp N3          &kp N4          &kp N5          &kp N6          &kp N7          &kp N8          &kp N9          &kp N0
+&kp LGUI        &kp LALT        &kp LCTRL       &kp LSHFT       &kp F11         &kp F12         &kp RSHFT       &kp RCTRL       &kp LALT        &kp RGUI
+&kp F1          &kp F2          &kp F3          &kp F4          &kp F5          &kp F6          &kp F7          &kp F8          &kp F9          &kp F10
+&kp ENTER       &kp SPACE       &kp BSPC        &none           &trans          &none
             >;
         };
 
     syms {
         bindings = <
-&kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT &kp CARET &kp AMPS &kp ASTRK &kp MINUS &kp EQUAL
-&kp LGUI &kp LALT &kp LCTRL &kp LSHFT &kp LPAR &kp RPAR &kp RSHFT &kp RCTRL &kp LALT &kp RGUI
-&kp APOS &kp DQT &kp PIPE &kp LBKT &kp LBRC &kp RBRC &kp RBKT &kp BSLH &kp UNDER &kp PLUS
-&kp ENTER &kp SPACE &kp BSPC &trans &kp GRAVE &kp TILDE
+&kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT       &kp CARET       &kp AMPS        &kp ASTRK       &kp MINUS       &kp EQUAL
+&kp LGUI        &kp LALT        &kp LCTRL       &kp LSHFT       &kp LPAR        &kp RPAR        &kp RSHFT       &kp RCTRL       &kp LALT        &kp RGUI
+&kp APOS        &kp DQT         &kp PIPE        &kp LBKT        &kp LBRC        &kp RBRC        &kp RBKT        &kp BSLH        &kp UNDER       &kp PLUS
+&kp ENTER       &kp SPACE       &kp BSPC        &trans          &kp GRAVE       &kp TILDE
             >;
         };
 
     func {
         bindings = <
-&bootloader &kp INS &kp SLCK &kp PAUSE_BREAK &none &none &kp C_VOLUME_DOWN &kp C_MUTE &kp C_VOLUME_UP &none
-&sys_reset &kp K_APP &kp CAPS &kp PSCRN &none &none &kp C_PREV &kp C_PP &kp C_NEXT &none
-&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR &none &none &none &none &none
-&none &trans &none &none &kp ESC &none
+&bootloader     &kp INS         &kp SLCK        &kp PAUSE       &none           &none           &kp VOLD        &kp C_MUTE      &kp VOLU        &none
+&sys_reset      &kp K_APP       &kp CAPS        &kp PSCRN       &none           &none           &kp C_PREV      &kp C_PP        &kp C_NEXT      &none
+&bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_CLR      &none           &none           &none           &none           &none
+&none           &trans          &none           &none           &kp ESC         &none
             >;
         };
     };
