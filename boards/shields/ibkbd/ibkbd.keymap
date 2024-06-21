@@ -60,7 +60,7 @@
 
     nav {
       bindings = <
-&kp TAB          &kp K_BACK       &kp K_FORWARD    &kp K_REFRESH    &none            &msc SCRL_LEFT   &msc SCRL_DOWN   &msc SCRL_UP     &msc SCRL_RIGHT  &none
+&kp TAB          &kp C_AC_BACK    &kp C_AC_FORWARD &kp C_AC_REFRESH &none            &msc SCRL_LEFT   &msc SCRL_DOWN   &msc SCRL_UP     &msc SCRL_RIGHT  &none
 &kp LGUI         &kp LALT         &kp LCTRL        &kp LSHFT        &none            &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &none
 &kp HOME         &kp PG_DN        &kp PG_UP        &kp END          &none            &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_UP     &mmv MOVE_RIGHT  &none
                                   &none            &none            &trans           &mkp RCLK        &mkp LCLK        &mkp MCLK
